@@ -1,0 +1,44 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "/Users/bbaron/Documents/PlatformIO/Projects/AVR8_BitBang_UART_TX/include",
+                "/Users/bbaron/Documents/PlatformIO/Projects/AVR8_BitBang_UART_TX/src",
+                "/Users/bbaron/.platformio/lib/Nanopb",
+                "/Users/bbaron/.platformio/packages/tool-unity",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "/Users/bbaron/Documents/PlatformIO/Projects/AVR8_BitBang_UART_TX/include",
+                    "/Users/bbaron/Documents/PlatformIO/Projects/AVR8_BitBang_UART_TX/src",
+                    "/Users/bbaron/.platformio/lib/Nanopb",
+                    "/Users/bbaron/.platformio/packages/tool-unity",
+                    ""
+                ]
+            },
+            "defines": [
+                "F_CPU=8000000L",
+                "LAYOUT_US_ENGLISH",
+                "PLATFORMIO=50203",
+                "ARDUINO_TEENSY2PP",
+                "__PLATFORMIO_BUILD_DEBUG__",
+                ""
+            ],
+            "cppStandard": "c++11",
+            "compilerPath": "/Users/bbaron/.platformio/packages/toolchain-atmelavr@1.50400.190710/bin/avr-gcc",
+            "compilerArgs": [
+                "-mmcu=at90usb1286",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}
