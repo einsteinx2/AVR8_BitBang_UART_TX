@@ -1,5 +1,7 @@
-#ifndef TEENSY20_H
-#define TEENSY20_H
+#ifndef __TEENSY20_H__
+#define __TEENSY20_H__
+
+#include <avr/io.h>
 
 // Teensy++ 2.0 CPU Prescaling Macros
 // More info: https://www.pjrc.com/teensy/prescaler.html

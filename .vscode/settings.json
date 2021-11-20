@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "teensy20.h": "c"
+    }
+}
