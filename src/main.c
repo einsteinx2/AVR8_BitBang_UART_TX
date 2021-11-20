@@ -13,6 +13,13 @@
 #include "uart_serial.h"
 #include <util/delay.h>
 
+#define ENABLE_UART_DEBUG_OUTPUT 1
+#if ENABLE_UART_DEBUG_OUTPUT
+	#define DEBUG_LOG(string) UART_tx_str(string)
+#else
+	#define DEBUG_LOG(string) 
+#endif
+
 int main(void) {
    // Teensy defaults to 2MHz unless we specify the CPU_PRESCALE value
    CPU_PRESCALE(CPU_8MHz);
@@ -20,7 +27,7 @@ int main(void) {
    UART_init();
 
    while(1) {
-      UART_tx_str("Hello world!\n");
+      DEBUG_LOG("Hello world!\n");
       _delay_ms(100);
    }
 
