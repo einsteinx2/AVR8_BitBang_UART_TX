@@ -9,6 +9,7 @@
     to achieve the desired baud rate (nominal value is 103)
  */
 
+#include "teensy20.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
@@ -58,12 +59,15 @@ void UART_init() {
    /*NOTE: since the internal 8MHz oscillator is not very accurate, this value can be tuned
      to achieve the desired baud rate, so if it doesn't work with the nominal value (103), try
      increasing or decreasing the value by 1 or 2 */
-   OCR0A = 25;//103;
+   OCR0A = 103;
    //enable interrupts
    sei();
 }
 
 int main(void) {
+   // Teensy defaults to 2MHz unless we specify the CPU_PRESCALE value
+   CPU_PRESCALE(CPU_8MHz);
+
    UART_init();
 
    while(1) {
